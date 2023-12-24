@@ -23,54 +23,61 @@
 
 <body>
     <!-- Hero section -->
-    <header id="hero">
+    <header id="hero" class="px-4 sm:px-40">
         <!-- nvigation container -->
-        <nav class="flex justify-between items-center text-white py-8 px-8 md:px-40">
+        <nav class="flex justify-between items-center text-white py-8 ">
             <img class="max-w-44" src="images/logo.svg" alt="logo img">
-            <ul class="hidden font-alata sm:flex md:space-x-8 gap-4">
+            <!-- Menu -->
+            <ul id="nav-links" class="hidden font-alata sm:flex sm:space-x-8 gap-4">
                 <li>
                     <a href="#">About</a>
+                    <div class="flex justify-center mx-auto w-3/4 hover:border-b-2 hover:border-white "></div>
                 </li>
                 <li>
                     <a href="#">Careers</a>
+                    <div class="flex justify-center mx-auto w-3/4 hover:border-b-2 hover:border-white "></div>
                 </li>
                 <li>
                     <a href="#">Events</a>
+                    <div class="flex justify-center mx-auto w-3/4 hover:border-b-2 hover:border-white "></div>
                 </li>
                 <li>
                     <a href="#">Products</a>
+                    <div class="flex justify-center mx-auto w-3/4 hover:border-b-2 hover:border-white "></div>
                 </li>
                 <li>
                     <a href="#">Support</a>
+                    <div class="flex justify-center mx-auto w-3/4 hover:border-b-2 hover:border-white "></div>
                 </li>
             </ul>
             <!-- Burger -->
-            <div class="burger cursor-pointer sm:hidden">
-                <span class="w-6 h-2 bg-white block mx-3 my-auto"></span>
-                <span class="w-6 h-2 bg-white block mx-3 my-auto"></span>
-                <span class="w-6 h-2 bg-white block mx-3 my-auto"></span>
+            <div id="burger" class="burger cursor-pointer sm:hidden">
+                <span class="bar  w-6 h-2 bg-white block mx-3 my-auto"></span>
+                <span class="bar  w-6 h-2 bg-white block mx-3 my-auto"></span>
+                <span class="bar  w-6 h-2 bg-white block mx-3 my-auto"></span>
             </div>
         </nav>
-        <div class="hero my-20 p-8 sm:p-40">
+        <div class="hero py-36">
             <h1
-                class="uppercase text-4xl p-4 font-sans sm:text-6xl text-white sm:w-1/2 border-2 border-inherit border-solid sm:p-8">
+                class="uppercase text-4xl p-4 max-w-lg   font-sans sm:text-6xl text-white sm:p-8 sm:w-1/2 border-2 border-inherit border-solid">
                 Immersive
                 experiences
                 that deliver</h1>
         </div>
     </header>
-    <section id="leader" class="my-8 py-8 sm:my-32">
-        <div class="relative px-8 sm:px-40 sm:flex  ">
-            <picture class="relative">
+    <section id="leader" class="">
+        <div class="px-4 my-16 sm:px-40 sm:flex sm:relative">
+            <picture class="">
                 <source media="(min-width: 35em)" srcset="images/desktop/image-interactive.jpg">
                 <img src="images/mobile/image-interactive.jpg" alt="image-interactive">
             </picture>
-            <div class="bg-white md:w-1/2 sm:px-16 sm:pt-16 sm:absolute sm:bottom-0 sm:right-0">
-                <h2 class="text-3xl font-bold py-6 sm:text-center md:text-5xl uppercase sm:px-6 sm:py-8 ">The leader in
+            <div class="bg-white sm:w-1/2 sm:absolute  sm:bottom-0 sm:right-0 sm:pr-40">
+                <h2 class="uppercase pt-8 text-3xl text-center font-bold sm:pl-20 sm:text-5xl sm:pt-16 sm:text-left ">
+                    The leader in
                     interactive
                     VR
                 </h2>
-                <p class="font-bold text-center pr-8 sm:px-6">
+                <p class="font-bold pt-8 text-center sm:text-left sm:pt-10 sm:pl-20">
                     Founded in 2011, Loopstudios has been producing world-class virtual reality
                     projects for some of the best companies around the globe. Our award-winning
                     creations have transformed businesses through digital experiences that bind
@@ -81,16 +88,16 @@
     </section>
     <section class="px-6 my-8 sm:px-40 sm:mb-32">
         <div class="sm:flex sm:justify-between sm:items-center sm:py-8">
-            <h2 class="text-3xl text-center sm:text-5xl uppercase ">Our creations</h2>
+            <h2 class="text-3xl text-center pb-6 sm:text-5xl uppercase ">Our creations</h2>
             <a href="#"
-                class="text-black border uppercase border-black hover:text-white hover:bg-black hidden sm:inline-block px-8 py-2 my-4">See
+                class="text-black border uppercase border-black hover:text-white hover:bg-black hidden sm:inline-block sm:px-8 sm:py-1">See
                 all</a>
         </div>
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-4 sm:gap-7">
             <div>
-                <picture class="relative">
+                <picture class="relative bg-gradient-to-tr from-black via-transparent to-transparent">
                     <span
-                        class="uppercase text-xl p-4 w-1/3 h-3/4 sm:text-3xl absolute bottom-4 left-4 sm:bottom-8 sm:left-8 sm:w-1/2 text-white">Deep
+                        class="uppercase text-xl  w-1/3 sm:text-3xl absolute bottom-4 left-4 sm:bottom-8 sm:left-8 sm:w-1/2 text-white">Deep
                         earth</span>
                     <source media="(min-width: 35em)" srcset="images/desktop/image-deep-earth.jpg">
                     <img src="images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
@@ -108,7 +115,7 @@
             <div>
                 <picture class="relative">
                     <span
-                        class="uppercase text-xl p-4 w-1/3 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">Soccer
+                        class="uppercase text-xl p-4 w-1/2 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">Soccer
                         team vr</span>
                     <source media="(min-width: 35em)" srcset="images/desktop/image-soccer-team.jpg">
                     <img src="images/mobile/image-soccer-team.jpg" alt="image-soccer-team">
@@ -126,7 +133,7 @@
             <div>
                 <picture class="relative">
                     <span
-                        class="uppercase text-xl p-4 w-1/3 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">From
+                        class="uppercase text-xl p-4 w-1/2 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">From
                         up above vr</span>
                     <source media="(min-width: 35em)" srcset="images/desktop/image-from-above.jpg">
                     <img src="images/mobile/image-from-above.jpg" alt="image-from-above">
@@ -153,7 +160,7 @@
             <div>
                 <picture class="relative">
                     <span
-                        class="uppercase text-xl p-4 w-1/3 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">make
+                        class="uppercase text-xl p-4 w-1/2 sm:text-3xl absolute bottom-0 left-0 sm:w-1/2 text-white">make
                         it fisheye</span>
                     <source media="(min-width: 35em)" srcset="images/desktop/image-fisheye.jpg">
                     <img src="images/mobile/image-fisheye.jpg" alt="image-fisheye">
@@ -167,10 +174,10 @@
         </div>
 
     </section>
-    <footer class="px-6 bg-black text-white flex-col sm:flex-row sm:justify-between sm:px-40 py-10">
+    <footer class="px-6 bg-black text-white flex flex-col sm:flex-row sm:justify-between sm:px-40 py-10">
         <div>
-            <div class="flex justify-center sm:inline-block">
-                <img class="max-w-36 " src="images/logo.svg" alt="logo">
+            <div class=" flex justify-center sm:inline-block">
+                <img class="max-w-36 " src="images/logo.svg" alt="logo" class="relative z-50">
             </div>
             <ul class="flex items-center flex-col gap-4 sm:gap-8 pt-8 sm:flex-row">
                 <li>
@@ -190,7 +197,7 @@
                 </li>
             </ul>
         </div>
-        <div class="pt-8">
+        <div class="pt-8 sm:pt-0">
             <div class="flex gap-4 justify-center sm:justify-end">
                 <img class="max-w-6" src="images/icon-facebook.svg" alt="icon-facebook">
                 <img class="max-w-6" src="images/icon-twitter.svg" alt="icon-twitter">
@@ -200,6 +207,7 @@
             <p class="pt-4 mx-auto sm:pt-8">© 2021 Loopstudios. All rights reserved.</p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
