@@ -919,6 +919,20 @@ img {
   #hero {
     background-image: url(../images/desktop/image-hero.jpg);
   }
+
+  #nav-links {
+    transform: translateX(0%);
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    background: none;
+  }
+
+  #nav-links a {
+    text-transform: capitalize;
+  }
 }
 
 .hover\:border-b-2:hover {
